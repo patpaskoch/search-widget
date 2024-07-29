@@ -1,26 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="bg-unsplash-background bg-cover bg-center min-h-screen">
+    <search-widget
+      :app-id="'CC14BU6E4Y'"
+      :api-key="'62f84edececbca44cb0078e3b0094b5b'"
+      :index-name="'wp_searchable_posts'"
+    ></search-widget>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import SearchWidget from './components/SearchWidget.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    SearchWidget
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* Hier kannst du zusätzliche Styles hinzufügen, falls nötig */
 </style>
